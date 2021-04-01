@@ -27,7 +27,7 @@ function install()
 
     # add all pkgs with specific versions (not pinned)
     @info "Installing packages..."
-    Pkg.add("IJulia"); # IJulia Kernel
+    pkg"add IJulia"; # IJulia Kernel
     pkg"add BenchmarkTools@0.7.0 CSV@0.8.4 CSVFiles@1.0.0 ColorTypes@0.8.1 Cubature@1.5.1 DataFrames@0.22.7 DifferentialEquations@6.16.0
 	Distributions@0.24.15 ExcelFiles@1.0.0 FFTW@1.3.2 Flux@0.8.3 Formatting@0.4.2 HDF5@0.15.4 LaTeXStrings@1.2.1 LsqFit@0.12.0
 	Measurements@2.5.0 Polynomials@2.0.5 ProgressMeter@1.5.0 PyCall@1.92.2 PyPlot@2.9.0 QuantumOptics@0.8.5 Traceur@0.3.1 Zygote@0.6.8"
